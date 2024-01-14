@@ -1,5 +1,5 @@
 'use strict';
-
+/*
 function calcAge(brithYear) {
   const age = 2037 - brithYear;
 
@@ -32,3 +32,4 @@ function calcAge(brithYear) {
 
 const firstName = 'jonas';
 calcAge(1995);
+*/
