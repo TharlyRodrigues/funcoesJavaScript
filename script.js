@@ -169,7 +169,7 @@ var addArrow = (a, b) => {
   return a + b;
 };
 addArrow(2, 5, 8);
-*/
+
 
 // Primitives vs. Objects (Primitive vs. Reference Types)
 
@@ -187,4 +187,39 @@ const me = {
 const friend = me;
 friend.age = 27;
 console.log('friend:', friend);
-console.log('me', me);
+console.log('me', me);*/
+
+// primitive types
+let lastName = 'william';
+let oldLastName = lastName;
+lastName = 'Davis';
+console.log(lastName, oldLastName);
+
+// reference types
+const jessica = {
+  firstName: 'jessica',
+  lastName: 'williams',
+  age: 27,
+};
+
+const marriedJessica = jessica;
+marriedJessica.lastName = 'david';
+console.log('before marriage:', jessica);
+console.log('After marriage:', marriedJessica);
+
+// copying objects
+const jessica2 = {
+  firstName: 'jessica',
+  lastName: 'williams',
+  age: 27,
+  family: ['alice', 'bob'],
+};
+
+const jessicaCopy = Object.assign({}, jessica2);
+jessicaCopy.lastName = 'David';
+
+jessicaCopy.family.push('Mary');
+jessicaCopy.family.push('tharly');
+
+console.log('before marriage:', jessica2);
+console.log('After marriage:', jessicaCopy);
